@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <title>The Cafe</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="description" content="About the cafe">
+  <meta name="keywords" content="cafe, restaurant, about the cafe, menu, eat, drink">
+  <meta name="author" content="Dejan Zmijanac">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+	<!--navigation links-->
+<nav>
+	<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#where">Where?</a></li>
+  </ul>
+</nav>
+<!--header-->
+<header class="bgimg w3-display-container">
+
+  <div class="centertxt"><h1>the Cafe</h1></div>
+	<div class="bottomleft"> Open from 6am to 5pm </div>
+	<div class="bottomright">15 Adr street, 5015</div>
+
+</header>
+
+<!--self-contained article-->
+<article>
+  <div id="about">
+    <br><br><br>
+    <h2>ABOUT THE CAFE</h2>
+  </div>
+  <br><br>
+  <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</P></p>
+
+  <div class="paragraph">
+    <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+    <p>Chef, Coffeeist and Owner: Liam Brown</p>
+  </div>
+
+  <img class="imgcontainer" src="img/coffeeshop.jpg" alt="coffeeshop">
+
+  <p><b>Opening hours: </b>everyday from 6am to 5pm.</p>
+  <p><b>Address: </b>15 Adr street, 5015, NY</p>
+
+</article>
+
+<article>
+
+  <div id="menu">
+    <br><br><br>
+    <h2>THE MENU</h2>
+  </div>
+  <br><br>
+
+  <div class="menu">
+
+    <div class="menunav">
+      <ul>
+        <li onclick="showEat()"><a id="eatbtn">Eat</a></li>
+        <li onclick="showDrink()"><a id="drinkbtn">Drink</a></li>
+      </ul>
+    </div>
+
+    <div class="menudata">
+
+      <div class="eat">
+        <p><b>Bread Basket </b><p>
+        <p>Assortment of fresh baked fruit breads and muffins 5.50 </p>
+      </div>
+      <div class="eat">
+        <p><b>Honey Almond Granola with Fruits</b><p>
+        <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+      </div>
+      <div class="eat">
+        <p><b>Belgian Waffle</b><p>
+        <p>Vanilla flavored batter with malted flour 7.50</p>
+      </div>
+      <div class="eat">
+        <p><b>Scrambled eggs</b><p>
+        <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+      </div>
+      <div class="eat">
+        <p><b>Blueberry Pancakes</b><p>
+        <p>With syrup, butter and lots of berries 8.50</p>
+      </div>
+
+      <div class="drink">
+        <p><b>Coffee </b><p>
+        <p>Regular coffee 2.50</p>
+      </div>
+      <div class="drink">
+        <p><b>Chocolato</b><p>
+        <p>Chocolate espresso with milk 4.50</p>
+      </div>
+      <div class="drink">
+        <p><b>Corretto</b><p>
+        <p>Whiskey and coffee 5.00</p>
+      </div>
+      <div class="drink">
+        <p><b>Iced tea</b><p>
+        <p>Hot tea, except not hot 3.00</p>
+      </div>
+      <div class="drink">
+        <p><b>Soda</b><p>
+        <p>Coke, Sprite, Fanta, etc. 2.50</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <br>
+  <img class="imgcontainer" src="img/coffeehouse2.jpg" alt="coffeehouse2">
+
+</article>
+
+<article>
+
+  <div id="where">
+    <br><br><br>
+    <h2>WHERE TO FIND US</h2>
+  </div>
+  <br><br>
+  <p>Find us at some address at some place.</p>
+  <img class="imgcontainer marginless" src="img/map.jpg" alt="map">
+  <p><span>FYI!</span> We offer full-service catering for any event, large or small.
+     We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+  <p>Reserve a table, ask for today's special or just send us a message:</p>
+
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="number" required="How meny people" >
+    <input type="datetime" placeholder="2017-11-16T20:00">
+    <input type="text" placeholder="Message / Special requirements">
+    <button>SEND MESSAGE</button>
+  </form>
+
+</article>
+
+<!--Defines a footer for a document or a section-->
+<footer> © 2020 Dejan Zmijanac. All rights reserved. </footer>
+
+<script src="js/script.js"> </script>
+
+</body>
+</html>

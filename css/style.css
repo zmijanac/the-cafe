@@ -1,0 +1,266 @@
+* {
+	box-sizing: border-box
+}
+body, html {
+	height: 100%;
+}
+body {
+	margin:0;
+	padding:0;
+  font-family: "Inconsolata", sans-serif;
+	background: #f7f5f2;
+}
+
+nav {
+	position: fixed;
+  top: 0;
+  width: 100%;
+	z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav ul li {
+  float: left;
+	width: 25%;
+  padding: 8px;
+}
+
+nav ul li a {
+	font-size: 14px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 7px 8px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: silver;
+	color: black;
+}
+
+header {
+	position: relative;
+	overflow: hidden;
+	-webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(50%);
+}
+header.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/coffeehouse.jpg);
+  min-height: 75%;
+}
+header .centertxt {
+	width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .centertxt h1 {
+	font-size: 75px;
+	color: white;
+	font-weight: 400;
+	text-align: center;
+	line-height: 1.5;
+}
+
+header .bottomleft {
+	display: block;
+  position: absolute;
+  bottom: 14px;
+  left: 20px;
+  font-size: 13px;
+	background: black;
+	color: white;
+	padding: 4px;
+}
+
+header .bottomright {
+  position: absolute;
+  bottom: 14px;
+  right: 20px;
+  font-size: 13px;
+	color: white;
+}
+
+article {
+	position: relative;
+  max-width:740px;
+	margin: auto;
+	padding: 20px;
+}
+
+article #about h2 {
+	display: block;
+	width: 220px;
+	margin: auto;
+	background: black;
+	text-align: center;
+	line-height: 1.5;
+	color: white;
+	font-weight: 400;
+	font-size: 1.2em;
+	letter-spacing: 2px;
+}
+
+article p {
+	font-size: 1em;
+	line-height: 2;
+	letter-spacing: 1.5px;
+}
+
+article .paragraph {
+	background: #f1f1f1;
+	border-left: 6px solid #cccccc;
+	padding: 1px 18px;
+}
+
+article .imgcontainer {
+	position: relative;
+	margin-top: 25px;
+	width: 100%;
+	max-width: 1000px;
+  height: auto;
+  filter: grayscale(70%);
+}
+
+article #menu h2 {
+	display: block;
+	width: 130px;
+	margin: auto;
+	background: black;
+	text-align: center;
+	line-height: 1.5;
+	color: white;
+	font-weight: 400;
+	font-size: 1.2em;
+	letter-spacing: 2px;
+}
+
+article .menu .menunav {
+  box-shadow: 1px 1px 4px 1px #888888;
+	background: #f7f5f2;
+}
+
+article .menu .menunav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+article .menu .menunav ul li {
+  float: left;
+	width: 50%;
+  padding: 8px;
+}
+
+article .menu .menunav ul li a {
+	font-size: 16px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 4px 6px;
+  text-decoration: none;
+}
+
+article .menu .menunav ul li a:hover {
+  background-color:#616161;
+	color: white;
+	cursor: pointer;
+}
+
+article .menu .menudata {
+	box-shadow: 1px 1px 4px 1px #888888;
+	font-size: 1em;
+  color: grey;
+  padding: 4px 6px;
+}
+
+article .menu .menudata .eat {
+	display: block;
+  color: grey;
+  padding: 12px 6px;
+}
+
+article .menu .menudata .eat p:first-child {
+  color: black;
+}
+
+article .menu .menudata .drink {
+	display: none;
+  color: grey;
+  padding: 12px 6px;
+}
+
+article .menu .menudata .drink p:first-child {
+  color: black;
+}
+
+article #where h2 {
+	display: block;
+	width: 250px;
+	margin: auto;
+	background: black;
+	text-align: center;
+	line-height: 1.5;
+	color: white;
+	font-weight: 400;
+	font-size: 1.2em;
+	letter-spacing: 2px;
+}
+
+article .marginless {
+	margin-top: 5px;
+}
+
+article span {
+	padding: 6px;
+	background: black;
+	color: white;
+}
+
+article form input {
+	width: 100%;
+	background: white;
+	color: black;
+	padding: 15px;
+	margin: 12px 0;
+	font-size: inherit;
+}
+
+article form button {
+	background: black;
+	color: white;
+	padding: 15px;
+	margin: 8px 0;
+	font-size: inherit;
+}
+
+footer {
+	margin: 50px auto;
+  color: black;
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  	header .bottomleft {
+		 display: none;
+}
+
+  nav::after, header::after, article::after {
+  content: "";
+  clear: both;
+  display: table;
+}
